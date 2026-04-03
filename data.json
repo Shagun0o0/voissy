@@ -1,0 +1,141 @@
+{
+    "users": [
+        {
+            "username": "shagun",
+            "password": "1234"
+        }
+    ],
+    "accounts": [
+        {
+            "account_number": "1234567890",
+            "name": "Shagun",
+            "balance": 10263
+        },
+        {
+            "account_number": "9876543210",
+            "name": "User2",
+            "balance": 12000
+        }
+    ],
+    "schemes": {
+        "fd": [
+            {
+                "name": "VOISSY Super FD",
+                "roi": "7.50% p.a.",
+                "tenure": "12-60 months",
+                "min_investment": "\u20b9 1000",
+                "features": [
+                    "Auto-renewal",
+                    "Flexible tenure",
+                    "Loan against FD (optional)"
+                ]
+            },
+            {
+                "name": "VOISSY Flexi FD",
+                "roi": "7.00% p.a.",
+                "tenure": "6-36 months",
+                "min_investment": "\u20b9 500",
+                "features": [
+                    "Premature withdrawal (as per policy)",
+                    "Monthly option (if applicable)"
+                ]
+            }
+        ],
+        "loans": [
+            {
+                "name": "VOISSY Personal Loan",
+                "interest_range": "10%\u201315% p.a.",
+                "tenure": "12-60 months",
+                "eligibility": "Salaried / self-employed, age 21-60",
+                "documents": [
+                    "ID proof",
+                    "Income proof",
+                    "Bank statements (3-6 months)"
+                ],
+                "highlights": [
+                    "Quick approval",
+                    "EMI calculator friendly"
+                ]
+            }
+        ]
+    },
+    "complaints": [
+        {
+            "id": "CMP-0001",
+            "category": "General",
+            "description": "",
+            "priority": "Normal",
+            "contact": "",
+            "status": "Open"
+        },
+        {
+            "id": "CMP-0002",
+            "category": "UPI Issue",
+            "description": "the upi of my account  not working",
+            "priority": "Urgent",
+            "contact": "1234567890",
+            "status": "Open"
+        }
+    ],
+    "service_requests": [
+        {
+            "id": "SR-0001",
+            "type": "General Request",
+            "description": "",
+            "contact": "",
+            "status": "Open"
+        }
+    ],
+    "mandates": [
+        {
+            "id": "MD-0001",
+            "type": "UPI Mandate",
+            "beneficiary": "",
+            "vpa": "",
+            "amount": null,
+            "frequency": "Monthly",
+            "start_date": "",
+            "status": "Active"
+        },
+        {
+            "id": "MD-0002",
+            "type": "UPI Mandate",
+            "beneficiary": "",
+            "vpa": "",
+            "amount": null,
+            "frequency": "Monthly",
+            "start_date": "",
+            "status": "Active"
+        },
+        {
+            "id": "MD-0003",
+            "type": "UPI Mandate",
+            "beneficiary": "",
+            "vpa": "",
+            "amount": null,
+            "frequency": "Monthly",
+            "start_date": "",
+            "status": "Active"
+        },
+        {
+            "id": "MD-0004",
+            "type": "UPI Mandate",
+            "beneficiary": "",
+            "vpa": "",
+            "amount": null,
+            "frequency": "Monthly",
+            "start_date": "",
+            "status": "Active"
+        },
+        {
+            "id": "MD-0005",
+            "type": "UPI Mandate",
+            "beneficiary": "",
+            "vpa": "",
+            "amount": null,
+            "frequency": "Monthly",
+            "start_date": "",
+            "status": "Active"
+        }
+    ]
+}

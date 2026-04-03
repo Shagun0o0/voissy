@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VOISSY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <div class="header">
+        <h2>VOISSY</h2>
+        <p>Your Smart Banking Assistant</p>
+    </div>
+
+    <div class="balance-card">
+        <p>Available Balance</p>
+        <h1 id="balanceDisplay">₹ --</h1>
+    </div>
+
+    <div id="statusMsg" class="status">
+        Ready to assist you
+    </div>
+
+    <!-- Voice -->
+    <div class="voice">
+        <button id="micBtn">Talk to VOISSY</button>
+        <button id="chatMicBtn" type="button">Speak to Chatbot</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs" role="tablist" aria-label="VOISSY sections">
+        <button class="tab-btn active" type="button" data-tab="tab-banking" role="tab" aria-selected="true">Banking</button>
+        <button class="tab-btn" type="button" data-tab="tab-schemes" role="tab" aria-selected="false">Schemes</button>
+        <button class="tab-btn" type="button" data-tab="tab-mandates" role="tab" aria-selected="false">UPI Mandates</button>
+        <button class="tab-btn" type="button" data-tab="tab-complaints" role="tab" aria-selected="false">Complaints</button>
+        <button class="tab-btn" type="button" data-tab="tab-requests" role="tab" aria-selected="false">Service Requests</button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div id="tab-banking" class="tab-panel active" role="tabpanel">
+        <div class="actions">
+            <button id="checkBtn">Check Balance</button>
+            <button id="sendBtn">Send Money</button>
+        </div>
+
+        <div class="inputs">
+            <input id="accountNumber" type="text" placeholder="Account Number">
+            <input id="amount" type="number" placeholder="Amount">
+        </div>
+    </div>
+
+    <div id="tab-schemes" class="tab-panel" role="tabpanel">
+        <div class="card">
+            <div class="card-head">Company Schemes</div>
+            <div class="field-row">
+                <label class="field-label">Type</label>
+                <select id="schemeType">
+                    <option value="fd">FD</option>
+                    <option value="loans">Loans</option>
+                </select>
+            </div>
+            <button type="button" id="loadSchemesBtn">Show Schemes</button>
+            <div id="schemesList" class="list"></div>
+        </div>
+    </div>
+
+    <div id="tab-mandates" class="tab-panel" role="tabpanel">
+        <div class="card">
+            <div class="card-head">UPI Mandate (Demo)</div>
+            <div class="field-row">
+                <label class="field-label">Beneficiary</label>
+                <input id="mandateBeneficiary" type="text" placeholder="e.g., Rahul"/>
+            </div>
+            <div class="field-row">
+                <label class="field-label">VPA</label>
+                <input id="mandateVpa" type="text" placeholder="e.g., rahul@upi"/>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Amount</label>
+                <input id="mandateAmount" type="number" placeholder="e.g., 500"/>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Frequency</label>
+                <select id="mandateFrequency">
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly" selected>Monthly</option>
+                </select>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Start Date</label>
+                <input id="mandateStartDate" type="date"/>
+            </div>
+            <button type="button" id="createMandateBtn">Create Mandate</button>
+            <div id="mandatesList" class="list"></div>
+        </div>
+    </div>
+
+    <div id="tab-complaints" class="tab-panel" role="tabpanel">
+        <div class="card">
+            <div class="card-head">Raise a Complaint</div>
+            <div class="field-row">
+                <label class="field-label">Category</label>
+                <select id="complaintCategory">
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="App Issue">App Issue</option>
+                    <option value="Loan Related">Loan Related</option>
+                    <option value="UPI Issue">UPI Issue</option>
+                    <option value="General">General</option>
+                </select>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Priority</label>
+                <select id="complaintPriority">
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Description</label>
+                <textarea id="complaintDescription" rows="4" placeholder="Write what happened..."></textarea>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Contact</label>
+                <input id="complaintContact" type="text" placeholder="Phone or email"/>
+            </div>
+            <button type="button" id="submitComplaintBtn">Submit Complaint</button>
+            <div id="complaintsList" class="list"></div>
+        </div>
+    </div>
+
+    <div id="tab-requests" class="tab-panel" role="tabpanel">
+        <div class="card">
+            <div class="card-head">Service Requests (Demo)</div>
+            <div class="field-row">
+                <label class="field-label">Request Type</label>
+                <input id="requestType" type="text" placeholder="e.g., Debit card issue"/>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Description</label>
+                <textarea id="requestDescription" rows="4" placeholder="Add details..."></textarea>
+            </div>
+            <div class="field-row">
+                <label class="field-label">Contact</label>
+                <input id="requestContact" type="text" placeholder="Phone or email"/>
+            </div>
+            <button type="button" id="submitRequestBtn">Create Request</button>
+            <div id="requestsList" class="list"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<!-- Re-auth modal (FaceID-like protection) -->
+<div id="reauthModal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="reauthTitle">
+        <div class="modal-head" id="reauthTitle">Verify Identity</div>
+        <div class="field-row">
+            <label class="field-label">Password</label>
+            <input id="reauthPassword" type="password" placeholder="Enter your password" />
+        </div>
+        <div class="modal-actions">
+            <button type="button" id="reauthCancelBtn">Cancel</button>
+            <button type="button" id="reauthConfirmBtn">Confirm</button>
+        </div>
+    </div>
+</div>
+<script src="https://widget.cxgenie.ai/widget.js" data-aid="29390fe8-2d12-45a5-8a85-7adbc4a18cd8" data-lang="en"></script>
+</body>
+</html>

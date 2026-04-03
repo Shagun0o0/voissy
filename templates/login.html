@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - VOISSY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-page">
+
+<div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+<div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+<div class="bg-orb bg-orb-3" aria-hidden="true"></div>
+
+<div class="container">
+    <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+            <h1>VOISSY</h1>
+            <p>Login to continue</p>
+        </div>
+    </div>
+
+    <form method="POST">
+        <label class="field">
+            <span>Username</span>
+            <input type="text" name="username" placeholder="Enter your username" autocomplete="username" required>
+        </label>
+        <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+        </label>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="fineprint" aria-hidden="true">Secure access • Fast • Voice-first</div>
+</div>
+
+<script src="https://widget.cxgenie.ai/widget.js" data-aid="29390fe8-2d12-45a5-8a85-7adbc4a18cd8" data-lang="en"></script>
+</body>
+</html>

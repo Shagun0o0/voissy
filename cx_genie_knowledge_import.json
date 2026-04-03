@@ -1,0 +1,100 @@
+[
+  {
+    "category": "fd",
+    "language": "en",
+    "keywords": "fd,fixed deposit,interest,roi,tenure,minimum",
+    "question": "What is VOISSY Super FD interest rate?",
+    "answer": "VOISSY Super FD offers 7.50% per year. Tenure is 12 to 60 months. Minimum investment is ₹1000. You can choose auto-renewal and flexible tenure options."
+  },
+  {
+    "category": "fd",
+    "language": "en",
+    "keywords": "fd,flexi,small amount",
+    "question": "Is there a smaller minimum FD amount?",
+    "answer": "Yes. VOISSY Flexi FD has a minimum of ₹500. ROI is around 7.00% per year. Tenure is 6 to 36 months. Check Schemes in the app for latest rates."
+  },
+  {
+    "category": "loan",
+    "language": "en",
+    "keywords": "loan,personal loan,eligibility,documents",
+    "question": "Who can apply for a personal loan?",
+    "answer": "Salaried and self-employed users aged 21 to 60 can apply. You need ID proof, income proof, and bank statements for the last 3 to 6 months."
+  },
+  {
+    "category": "loan",
+    "language": "en",
+    "keywords": "loan,interest,rate,emi",
+    "question": "What is the personal loan interest rate?",
+    "answer": "VOISSY Personal Loan interest is typically between 10% and 15% per year depending on profile. Tenure can be 12 to 60 months. Exact rate is shown at application time."
+  },
+  {
+    "category": "complaint",
+    "language": "en",
+    "keywords": "complaint,raise,grievance,issue",
+    "question": "How do I raise a complaint in VOISSY?",
+    "answer": "Open the Complaints tab. Choose a category, set priority, write what happened, add your phone or email, then tap Submit Complaint. You can also say complain followed by your problem to dictate the text."
+  },
+  {
+    "category": "complaint",
+    "language": "en",
+    "keywords": "complaint,urgent,priority",
+    "question": "How do I mark a complaint as urgent?",
+    "answer": "In the Complaints tab, set Priority to Urgent or High before submitting. You can say urgent or high priority when you open complaints by voice."
+  },
+  {
+    "category": "upi",
+    "language": "en",
+    "keywords": "upi,mandate,recurring,autopay",
+    "question": "What is a UPI mandate?",
+    "answer": "A UPI mandate sets recurring payments to a beneficiary using their VPA. You choose amount, frequency such as daily weekly or monthly, and start date. This is a demo in VOISSY for learning."
+  },
+  {
+    "category": "upi",
+    "language": "en",
+    "keywords": "upi,vpa,beneficiary",
+    "question": "What is VPA?",
+    "answer": "VPA is Virtual Payment Address like name at bank handle. Example rahul at upi. You enter beneficiary name and VPA when creating a mandate."
+  },
+  {
+    "category": "service_request",
+    "language": "en",
+    "keywords": "service request,request,debit card",
+    "question": "How do I create a service request?",
+    "answer": "Open Service Requests tab. Enter request type, describe the issue, add contact, then Create Request. Examples are debit card issue or UPI issue."
+  },
+  {
+    "category": "banking",
+    "language": "en",
+    "keywords": "balance,check balance,account",
+    "question": "How do I check my balance?",
+    "answer": "Go to Banking tab. Enter your account number. Tap Check Balance or say check balance by voice after entering account number."
+  },
+  {
+    "category": "banking",
+    "language": "en",
+    "keywords": "send money,transfer,payment",
+    "question": "How do I send money?",
+    "answer": "Enter account number and amount in Banking tab. Tap Send Money. You will verify identity with your password for security. You can also use voice commands for account and amount."
+  },
+  {
+    "category": "security",
+    "language": "en",
+    "keywords": "password,safe,security,verify",
+    "question": "Why does VOISSY ask for password again when sending money?",
+    "answer": "It is an extra safety step so money is not sent by mistake or by someone else using your device. Always keep your password private."
+  },
+  {
+    "category": "voice",
+    "language": "en",
+    "keywords": "voice,mic,speak,voissy",
+    "question": "What can I say to VOISSY by voice?",
+    "answer": "You can say account number with digits, amount, check balance, send, open chatbot, ask chatbot with your question, complain followed by your issue, stop speaking, and names of tabs like schemes or complaints."
+  },
+  {
+    "category": "general",
+    "language": "en",
+    "keywords": "help,support,voissy",
+    "question": "Where can I get more help?",
+    "answer": "Use the chat bubble for CX Genie assistant. Use Talk to VOISSY for banking and tabs. Use Speak to Chatbot to send voice messages to the AI chatbot."
+  }
+]
